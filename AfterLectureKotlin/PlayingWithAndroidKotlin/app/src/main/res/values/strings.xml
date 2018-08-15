@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PlayingWithAndroidKotlin</string>
+    <string name="navigate">Navigate</string>
+    <string name="hello_android">Hello Android!</string>
+</resources>
