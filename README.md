@@ -1,6 +1,6 @@
-# Eksempler Android-Programmering Høst 2018
-Eksempler til kurset "Android-Programmering" høsten 2018 ved Høgskolen i Østfold
+# Examples in Android-Programming Autumn 2018
+Examples for the course "Android-Programming" autumn 2018 at Ostfold University College
 
 
-## Forelesning 01
-* Introduksjon til Android
+## Lecture 01
+* Introduction to Android
