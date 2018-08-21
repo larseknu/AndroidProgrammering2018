@@ -34,8 +34,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-
-    <!-- TODO 8: Add a button -->
-    <!-- TODO 9: Add an "onClick" named navigateToOtherActivity to the button -->
-
 </android.support.constraint.ConstraintLayout>
