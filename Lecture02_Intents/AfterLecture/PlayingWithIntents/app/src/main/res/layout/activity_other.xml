@@ -8,10 +8,11 @@
 
     <!-- TODO 7: Add an TextView with the text "This is OtherActivity!" -->
 
-    <!-- TODO X1: Add a button with the text GetPicture -->
-    <!-- TODO X3: Add an "onClick" named getPicture to the button -->
 
-    <!-- TODO X2: Add an ImageView -->
+    <!-- TODO Y1: Add a button with the text GetPicture -->
+    <!-- TODO Y3: Add an "onClick" named getPicture to the button -->
+
+    <!-- TODO Y2: Add an ImageView -->
 
     <TextView
         android:id="@+id/textView"
@@ -41,15 +42,17 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/chosen_picture"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:contentDescription="@string/chosen_picture" />
+        app:layout_constraintTop_toBottomOf="@+id/getPictureButton" />
 
 
 </android.support.constraint.ConstraintLayout>

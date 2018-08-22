@@ -5,4 +5,6 @@
     <string name="get_picture">Get Picture!</string>
     <string name="this_is_otheractivity">This is OtherActivity!</string>
     <string name="open_webpage">Open WebPage</string>
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="open_maps">Open Maps</string>
 </resources>
