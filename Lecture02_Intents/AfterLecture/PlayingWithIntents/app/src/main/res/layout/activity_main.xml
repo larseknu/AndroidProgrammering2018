@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- TODO 2.1: Add an EditText View -->
     <EditText
         android:id="@+id/nameEditText"
         android:layout_width="wrap_content"
@@ -20,7 +21,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
+    <!-- TODO 1.1: Remove the "Hello World!" TextView -->
+    <!-- TODO 1.2: Add a button with the text "Start OtherActivity (Explicit)" -->
     <Button
         android:id="@+id/navigateToOtherButton"
         android:layout_width="wrap_content"
@@ -33,6 +35,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nameEditText" />
 
+    <!-- TODO 3.1: Add a button with the text "Open Webpage" -->
+    <!-- TODO 3.2: Add an "onClick" named openWebpage to the button -->
     <Button
         android:id="@+id/openWebPageButton"
         android:layout_width="wrap_content"
@@ -47,6 +51,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/navigateToOtherButton" />
 
+    <!-- TODO 4.1: Add a button with the text "Open Maps" -->
+    <!-- TODO 4.2: Add an "onClick" named openMaps to the button -->
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
@@ -59,20 +65,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/openWebPageButton" />
-
-
-    <!-- TODO 1: Remove the "Hello World!" TextView -->
-    <!-- TODO 2: Add a button with the text "Start OtherActivity (Explicit)" -->
-    <!-- TODO 3: Add an "onClick" named navigateToOtherActivity to the button -->
-
-    <!-- TODO X1: Add an EditText View -->
-
-    <!-- TODO 8: Add a button with the text "Open Webpage" -->
-    <!-- TODO 9: Add an "onClick" named openWebpage to the button -->
-
-
-    <!-- TODO Y1: Add a button with the text "Open Maps" -->
-    <!-- TODO Y2: Add an "onClick" named openMaps to the button -->
-
 
 </android.support.constraint.ConstraintLayout>
