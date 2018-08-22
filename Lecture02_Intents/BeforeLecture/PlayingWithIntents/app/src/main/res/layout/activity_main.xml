@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- TODO 2.1: Add an EditText View -->
+
+    <!-- TODO 1.1: Remove the "Hello World!" TextView -->
+    <!-- TODO 1.2: Add a button with the text "Start OtherActivity (Explicit)" -->
+
+    <!-- TODO 3.1: Add a button with the text "Open Webpage" -->
+    <!-- TODO 3.2: Add an "onClick" named openWebpage to the button -->
+
+    <!-- TODO 4.1: Add a button with the text "Open Maps" -->
+    <!-- TODO 4.2: Add an "onClick" named openMaps to the button -->
+
+</android.support.constraint.ConstraintLayout>
