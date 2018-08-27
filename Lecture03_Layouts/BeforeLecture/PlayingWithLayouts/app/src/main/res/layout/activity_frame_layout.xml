@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- TODO 04.01: Copy the view and invert the height/width sizes -->
+    <!-- TODO 04.02: Add layout_gravity "end" to both views -->
+    <!-- TODO 04.03: Add gravity "end" to both views -->
+    <!-- TODO 04.04: Change the gravity to end|bottom -->
+    <!-- TODO 04.05: Set the layout_margin to 20dp -->
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:background="@color/blue" />
+
+    <!-- TODO 05.01: Add a new FrameLayout under the current one -->
+    <!-- TODO 05.02: Add an ImageView with a movieposter -->
+    <!-- TODO 05.03: Add an ImageView with a pictureframe-image -->
+    <!-- TODO 05.04: Add an ImageView with a "seen-tag"-image -->
+    <!-- TODO 05.05: Remove the "seen-tag" ImageView and att it to the foreground in FrameLayout -->
+    <!-- TODO 05.06: Set the foregroundGravity to top|right in FrameLayout -->
+
+</FrameLayout>
