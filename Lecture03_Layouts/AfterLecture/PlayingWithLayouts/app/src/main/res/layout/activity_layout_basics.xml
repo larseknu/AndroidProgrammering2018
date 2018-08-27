@@ -5,13 +5,13 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <!-- TODO 01.01: Add a background color to TextView -->
-    <!-- TODO 01.02: Change width to wrap_content in TextView -->
-    <!-- TODO 01.03: Set the height of the TextView to 100dp -->
-    <!-- TODO 01.04: Set the layout_margin to 20dp -->
-    <!-- TODO 01.05: Set the padding to 10dp -->
-    <!-- TODO 01.06: Set the layout_gravity to center_horizontal -->
-    <!-- TODO 01.07: Set the layout_gravity to center_horizontal|bottom -->
+    <!--  01.01: Add a background color to TextView -->
+    <!--  01.02: Change width to wrap_content in TextView -->
+    <!--  01.03: Set the height of the TextView to 100dp -->
+    <!--  01.04: Set the layout_margin to 20dp -->
+    <!--  01.05: Set the padding to 10dp -->
+    <!--  01.06: Set the layout_gravity to center_horizontal -->
+    <!--  01.07: Set the layout_gravity to center_horizontal|bottom -->
 
     <!--TextView
         android:id="@+id/textView"

@@ -7,16 +7,16 @@
     android:stretchColumns="0,1,2"
     android:collapseColumns="3">
 
-    <!-- TODO 06.01: Add a new TableRow to the top -->
-    <!-- TODO 06.02: Add a new TextView inside the new TableRow with the text Movies and a background color -->
-    <!-- TODO 06.03: Set layout_column to 1 and layout_span to 2 in the Movies TextView -->
-    <!-- TODO 06.04: Remove the TableRow, and keep the TextView without the column/span -->
-    <!-- TODO 06.05: Set shrinkColumns 2 to the TableLayout -->
-    <!-- TODO 06.06: Set layout_height to match_parent for all the TextViews inside the first TableRow -->
-    <!-- TODO 06.07: Set stretchColumns 2 to the TableLayout (watch in landscape to see the difference -->
-    <!-- TODO 06.07: Change stretchColumns to *  -->
-    <!-- TODO 06.07: Set collapseColumns 3 to the TableLayout  -->
-    <!-- TODO 06.07: Change stretchColumns to 0,1,2  -->
+    <!--  06.01: Add a new TableRow to the top -->
+    <!--  06.02: Add a new TextView inside the new TableRow with the text Movies and a background color -->
+    <!--  06.03: Set layout_column to 1 and layout_span to 2 in the Movies TextView -->
+    <!--  06.04: Remove the TableRow, and keep the TextView without the column/span -->
+    <!--  06.05: Set shrinkColumns 2 to the TableLayout -->
+    <!--  06.06: Set layout_height to match_parent for all the TextViews inside the first TableRow -->
+    <!--  06.07: Set stretchColumns 2 to the TableLayout (watch in landscape to see the difference -->
+    <!--  06.07: Change stretchColumns to *  -->
+    <!--  06.07: Set collapseColumns 3 to the TableLayout  -->
+    <!--  06.07: Change stretchColumns to 0,1,2  -->
 
     <TextView
         android:text="@string/movies"

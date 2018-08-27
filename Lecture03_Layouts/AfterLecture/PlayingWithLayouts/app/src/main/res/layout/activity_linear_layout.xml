@@ -11,17 +11,17 @@
         android:orientation="horizontal"
         android:weightSum="4">
 
-        <!-- TODO 02.01: Set the orientation of the LinearLayoutActivity to horizontal -->
-        <!-- TODO 02.02: Copy the current TextView and give it a new ID -->
-        <!-- TODO 02.03: Change the background color of the copied TextView -->
-        <!-- TODO 02.04: Change the text of the new TextView to "Right" -->
-        <!-- TODO 02.05: Set the layout_weight of the "Left" to 1, and layout_width to 0dp -->
-        <!-- TODO 02.06: Set the layout_weight of the "Right" to 2, and layout_width to 0dp -->
-        <!-- TODO 02.07: Copy one of the TextView to a new one, and change the text to "Middle" with a new background color -->
-        <!-- TODO 02.08: In "Middle", remove the weight and set the layout_width it wrap_content -->
-        <!-- TODO 02.09: Set the weightSum of LinearLayoutActivity to 4 -->
-        <!-- TODO 02.09: Set the layout_weight of "Right" to 1 -->
-        <!-- TODO 02.10: Add a View before "Left" width layout_width 0dp, layout_height match_parent and layout_weight 1 -->
+        <!--  02.01: Set the orientation of the LinearLayoutActivity to horizontal -->
+        <!--  02.02: Copy the current TextView and give it a new ID -->
+        <!--  02.03: Change the background color of the copied TextView -->
+        <!--  02.04: Change the text of the new TextView to "Right" -->
+        <!--  02.05: Set the layout_weight of the "Left" to 1, and layout_width to 0dp -->
+        <!--  02.06: Set the layout_weight of the "Right" to 2, and layout_width to 0dp -->
+        <!--  02.07: Copy one of the TextView to a new one, and change the text to "Middle" with a new background color -->
+        <!--  02.08: In "Middle", remove the weight and set the layout_width it wrap_content -->
+        <!--  02.09: Set the weightSum of LinearLayoutActivity to 4 -->
+        <!--  02.09: Set the layout_weight of "Right" to 1 -->
+        <!--  02.10: Add a View before "Left" width layout_width 0dp, layout_height match_parent and layout_weight 1 -->
 
         <!--TextView
             android:id="@+id/textView"
@@ -68,11 +68,11 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <!-- TODO 03.01: Add an EditText view with width match_parent -->
-        <!-- TODO 03.02: Add another LinearLayoutActivity with layout_width "match_parent" and orientation "horizontal -->
-        <!-- TODO 03.03: Add a Button with wrap_content and the text Cancel under the new LinearLayoutActivity -->
-        <!-- TODO 03.04: Add a Button with wrap_content and the text OK under the new LinearLayoutActivity -->
-        <!-- TODO 03.04: Set the gravity of the new LinearLayoutActivity to be "end" -->
+        <!--  03.01: Add an EditText view with width match_parent -->
+        <!--  03.02: Add another LinearLayoutActivity with layout_width "match_parent" and orientation "horizontal -->
+        <!--  03.03: Add a Button with wrap_content and the text Cancel under the new LinearLayoutActivity -->
+        <!--  03.04: Add a Button with wrap_content and the text OK under the new LinearLayoutActivity -->
+        <!--  03.04: Set the gravity of the new LinearLayoutActivity to be "end" -->
 
         <EditText
             android:layout_width="match_parent"
