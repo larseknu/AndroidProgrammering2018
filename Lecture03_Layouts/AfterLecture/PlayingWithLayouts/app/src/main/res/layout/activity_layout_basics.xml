@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- TODO 01.01: Add a background color to TextView -->
+    <!-- TODO 01.02: Change width to wrap_content in TextView -->
+    <!-- TODO 01.03: Set the height of the TextView to 100dp -->
+    <!-- TODO 01.04: Set the layout_margin to 20dp -->
+    <!-- TODO 01.05: Set the padding to 10dp -->
+    <!-- TODO 01.06: Set the layout_gravity to center_horizontal -->
+    <!-- TODO 01.07: Set the layout_gravity to center_horizontal|bottom -->
+
+    <!--TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hello, Android!" /-->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@android:color/holo_green_light"
+        android:text="Hello, Android!" />
+
+
+</LinearLayout>

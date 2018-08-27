@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="input"/>
+
+    <Button
+        android:id="@+id/ok_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_below="@+id/editText"
+        android:layout_toStartOf="@+id/ok_button"
+        android:layout_alignWithParentIfMissing="true" />
+
+    <TextView
+        android:id="@+id/center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Center"
+        android:textSize="40sp"
+        android:layout_centerInParent="true"
+        android:background="@color/blue" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="North"
+        android:background="@color/lime_green"
+        android:layout_above="@+id/center"
+        android:layout_alignStart="@+id/center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="East"
+        android:background="@color/lime_green"
+        android:layout_alignTop="@+id/center"
+        android:layout_toEndOf="@+id/center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="West"
+        android:textSize="30sp"
+        android:background="@color/lime_green"
+        android:layout_toStartOf="@+id/center"
+        android:layout_alignBaseline="@+id/center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="South"
+        android:background="@color/lime_green"
+        android:layout_below="@+id/center"
+        android:layout_alignEnd="@+id/center" />
+
+</RelativeLayout>

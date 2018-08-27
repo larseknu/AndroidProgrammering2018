@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">PlayingWithLayouts</string>
+
+    <string name="left">Left</string>
+    <string name="middle">Middle</string>
+    <string name="right">Right</string>
+
+    <string name="layout_basics">Layout Basics</string>
+    <string name="linear_layout">Linear Layout</string>
+    <string name="frame_layout">Frame Layout</string>
+    <string name="table_layout">Table Layout</string>
+    <string name="relative_layout">Relative Layout</string>
+    <string name="constraint_layout">Constraint Layout</string>
+
+    <string name="deadpool_poster">Deadpool poster</string>
+    <string name="poster_frame">poster frame</string>
+    <string name="seen">Seen</string>
+
+    <string name="the_shawshank_redemption">The Shawshank Redemption</string>
+    <string name="stars_the_shawshank_redemption">Tim Robbins, Morgan Freeman, Bob Gunton</string>
+    <string name="score9_3">9.3</string>
+    <string name="two">2</string>
+    <string name="despicable_me">Despicable Me</string>
+    <string name="score7_6">7.6</string>
+    <string name="stars_despicable_me">Steve Carell, Jason Segel, Russell Brand</string>
+    <string name="one">1</string>
+    <string name="movies">Movies</string>
+
+    <string name="a">A</string>
+    <string name="b">B</string>
+    <string name="c">C</string>
+    <string name="e">E</string>
+    <string name="d">D</string>
+
+    <string name="remove_view">Remove View</string>
+
+    <string name="deadpool_summary">Based upon Marvel Comics\' most unconventional hero, Deadpool tells the origin story of former Special Forces operative turned mercenary Wade Wilson. Who after being subjected to a rogue experiment leaves him with accelerated healing powers, adopts the alter ego Deadpool.</string>
+    <string name="deadpool_header">deadpool header</string>
+    <string name="plex_poster">plex poster</string>
+    <string name="play_button">play button</string>
+    <string name="deadpool">Deadpool</string>
+    <string name="year_2016">2016</string>
+    <string name="add_movie_to_favourites">add movie to favourites</string>
+    <string name="add_movie_watched">Add movie to watched</string>
+    <string name="download_movie">Download movie</string>
+    <string name="clock_image">Clock image</string>
+    <string name="movie_duration">1 hr 48 min</string>
+
+    <string name="philter">Philter</string>
+    <string name="song_title">We Move Like Wolves</string>
+    <string name="duration_remaining">00:19</string>
+    <string name="total_duration">3:10</string>
+    <string name="play_button_image">Play button image</string>
+    <string name="movie_poster">Movie poster</string>
+    <string name="skip_next">Skip next</string>
+    <string name="play">Play</string>
+    <string name="cover_art">Cover art</string>
+
+</resources>
