@@ -2,7 +2,7 @@
 Examples for the course "Android-Programming" 2018 at Ostfold University College
 
 ## Lecture 04
-* Examples exists in Lecture 02 and 03
+* Examples exist in Lecture 02 and 03
 
 ## Lecture 03
 * Layouts
