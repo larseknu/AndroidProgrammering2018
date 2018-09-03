@@ -1,6 +1,9 @@
 # Examples - Android-Programming Autumn 2018
 Examples for the course "Android-Programming" 2018 at Ostfold University College
 
+## Lecture 05
+* Fragments
+
 ## Lecture 04
 * Examples exist in Lecture 02 and 03
 
