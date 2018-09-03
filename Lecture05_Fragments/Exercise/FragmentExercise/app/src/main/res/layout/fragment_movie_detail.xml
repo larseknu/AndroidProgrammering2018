@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/movie_header"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/movie_header"
+            android:scaleType="centerCrop"
+            android:src="@drawable/deadpool_header"
+            app:layout_constraintBottom_toTopOf="@+id/guideline_header_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.constraint.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/guideline_header_size"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.35"
+            tools:layout_editor_absoluteY="182dp"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <ImageView
+            android:id="@+id/movie_poster"
+            android:layout_width="130dp"
+            android:layout_height="180dp"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/movie_poster"
+            android:src="@drawable/deadpool_poster"
+            app:layout_constraintBottom_toTopOf="@+id/guideline_header_size"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline_header_size"
+            app:layout_constraintVertical_bias="0.5"
+            app:srcCompat="@drawable/deadpool_poster" />
+
+        <ImageView
+            android:id="@+id/movie_play"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/play_button"
+            android:src="@drawable/ic_play_circle_filled"
+            app:layout_constraintBottom_toTopOf="@+id/guideline_header_size"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline_header_size" />
+
+        <TextView
+            android:id="@+id/movie_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/movie_title_deadpool"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toRightOf="@+id/movie_poster"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/movie_play" />
+
+        <TextView
+            android:id="@+id/movie_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/movie_year_deadpool"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toRightOf="@+id/movie_poster"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/movie_title" />
+
+
+        <ImageView
+            android:id="@+id/movie_download"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/download_movie_button"
+            android:src="@drawable/ic_download"
+            app:layout_constraintLeft_toRightOf="@+id/movie_watched"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/movie_poster" />
+
+
+        <ImageView
+            android:id="@+id/movie_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/add_to_playlist_button"
+            android:src="@drawable/ic_add"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/movie_watched"
+            app:layout_constraintTop_toBottomOf="@+id/movie_poster" />
+
+        <ImageView
+            android:id="@+id/movie_watched"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/mark_as_watched_button"
+            android:src="@drawable/ic_watched"
+            app:layout_constraintLeft_toRightOf="@+id/movie_add"
+            app:layout_constraintRight_toLeftOf="@+id/movie_download"
+            app:layout_constraintTop_toBottomOf="@+id/movie_poster" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@string/time_icon"
+            android:src="@drawable/ic_watch_later"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/movie_add" />
+
+        <TextView
+            android:id="@+id/durationMovieTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="@string/duration_movie_deadpool"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+            app:layout_constraintLeft_toRightOf="@+id/imageView5"
+            android:layout_marginStart="8dp" />
+
+        <TextView
+            android:id="@+id/movieSummaryTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/deadpool_summary"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@android:style/Widget.DeviceDefault.Light.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/movieSummaryTextView" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
