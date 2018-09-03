@@ -19,7 +19,6 @@ public class MovieRecyclerAdapter extends RecyclerView.Adapter<MovieRecyclerAdap
     private List<Movie> movieList;
     private RecyclerViewClickListener clickListener;
 
-
     public MovieRecyclerAdapter(Context context, List<Movie> movieList, RecyclerViewClickListener clickListener) {
         this.layoutInflater = LayoutInflater.from(context);
         this.movieList = movieList;

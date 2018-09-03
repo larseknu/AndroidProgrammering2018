@@ -1,12 +1,15 @@
 package no.hiof.larseknu.playingwithfragments.fragmentdetailexample;
 
+import android.content.Intent;
+import android.content.res.Configuration;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import no.hiof.larseknu.playingwithfragments.R;
 
-public class MovieListActivity extends AppCompatActivity {
+public class MovieListActivity extends AppCompatActivity implements MovieListFragment.OnMovieFragmentInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,12 +17,14 @@ public class MovieListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_movie_list);
 
         setTitle("FragmentDetailExample");
+    }
 
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        MovieListFragment movieListFragment = new MovieListFragment();
+    @Override
+    public void onMovieSelected(int movieId) {
+        // TODO 01.01: Create a activity_main.xml layout for landscape, which also includes the MovieDetailFragment
 
-        fragmentManager.beginTransaction().add(R.id.leftFragmentContainter, movieListFragment).commit();
-
-
+        // TODO 01.02: Check if the orientation is in landscape
+        // TODO 01.03: If it's in landscape, send information to the MovieDetailFragment
+        // TODO 01.04: If it's not in landscape, send the information to the MovieDetailActivity via an intent with extra
     }
 }

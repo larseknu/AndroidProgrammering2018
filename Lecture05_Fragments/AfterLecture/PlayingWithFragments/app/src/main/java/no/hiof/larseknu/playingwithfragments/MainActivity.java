@@ -5,8 +5,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import no.hiof.larseknu.playingwithfragments.buttonhandlingexample.ButtonHandlingActivity;
+import no.hiof.larseknu.playingwithfragments.buttonhandlingexample.ButtonHandlingFragment;
 import no.hiof.larseknu.playingwithfragments.fragmentdetailexample.MovieListActivity;
 import no.hiof.larseknu.playingwithfragments.fragmentmanagerexample.FragmentManagerActivity;
+import no.hiof.larseknu.playingwithfragments.fragmenttabsexample.TabbedActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,5 +26,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void startFramentDetailActivity(View view) {
         startActivity(new Intent(this, MovieListActivity.class));
+    }
+
+    public void startFragmentTabsActivity(View view) {
+        startActivity(new Intent(this, TabbedActivity.class));
+    }
+
+    public void startFramentButtonClickActivity(View view) {
+        startActivity(new Intent(this, ButtonHandlingActivity.class));
     }
 }

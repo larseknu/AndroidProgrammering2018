@@ -12,7 +12,7 @@
     <string name="remove_joy">Remove Joy</string>
     <string name="remove_sadness">Remove Sadness</string>
     <string name="replace_with_joy_fragment">Replace With\nJoy Fragment</string>
-    <string name="replace_with_sadness_fragment">Replace Wit\nSadness Fragment</string>
+    <string name="replace_with_sadness_fragment">Replace With\nSadness Fragment</string>
     <string name="fragment_detail_image">Fragment detail image</string>
     <string name="fragment_manager_image">Fragment manager image</string>
     <string name="title_movie_list">Movies</string>
@@ -30,4 +30,15 @@
     <string name="play_button">Play Button</string>
     <string name="deadpool_summary">Based upon Marvel Comics\\\' most unconventional hero, Deadpool tells the origin story of former Special Forces operative turned mercenary Wade Wilson. Who after being subjected to a rogue experiment leaves him with accelerated healing powers, adopts the alter ego Deadpool.</string>
     <string name="movie_header">Movie Header</string>
+    <string name="title_activity_tabbed_movie">TabbedMovieActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_tabs_movie">TabsMovieActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="title_activity_tabs">TabsActivity</string>
+    <string name="watchlist">Watchlist</string>
+    <string name="click_me">Click me!</string>
+    <string name="click_count">Click count</string>
+    <string name="zero">0</string>
 </resources>

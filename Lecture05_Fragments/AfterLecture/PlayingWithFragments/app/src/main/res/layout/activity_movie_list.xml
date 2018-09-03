@@ -4,9 +4,11 @@
     android:layout_height="match_parent"
     android:orientation="horizontal" >
 
-    <FrameLayout
-        android:id="@+id/leftFragmentContainter"
+    <fragment
+        android:id="@+id/movieListFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:name="no.hiof.larseknu.playingwithfragments.fragmentdetailexample.MovieListFragment"/>
+
 
 </LinearLayout>

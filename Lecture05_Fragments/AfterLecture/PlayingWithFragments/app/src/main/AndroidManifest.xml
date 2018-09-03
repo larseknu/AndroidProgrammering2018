@@ -17,7 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".fragmentmanagerexample.FragmentManagerActivity" />
-        <activity android:name=".fragmentdetailexample.MovieListActivity"></activity>
+        <activity android:name=".fragmentdetailexample.MovieListActivity" />
+        <activity android:name=".fragmentdetailexample.MovieDetailActivity" />
+        <activity android:name=".fragmenttabsexample.TabbedActivity" />
+        <activity android:name=".buttonhandlingexample.ButtonHandlingActivity"></activity>
     </application>
 
 </manifest>
