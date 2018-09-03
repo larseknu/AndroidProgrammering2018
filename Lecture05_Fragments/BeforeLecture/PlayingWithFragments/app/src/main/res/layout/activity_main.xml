@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/fragmentManagerImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/fragment_manager_image"
+        android:onClick="startFramentManagerActivity"
+        app:layout_constraintBottom_toTopOf="@+id/fragmentTabsImageView"
+        app:layout_constraintEnd_toStartOf="@+id/fragmentDetailImageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fragment_manager" />
+
+    <ImageView
+        android:id="@+id/fragmentDetailImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/fragment_detail_image"
+        android:onClick="startFramentDetailActivity"
+        app:layout_constraintBottom_toTopOf="@+id/fragmentButtonClickImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fragmentManagerImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fragment_detail" />
+
+    <ImageView
+        android:id="@+id/fragmentTabsImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="startFragmentTabsActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/fragmentButtonClickImageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentManagerImageView"
+        app:srcCompat="@drawable/fragment_tabs" />
+
+    <ImageView
+        android:id="@+id/fragmentButtonClickImageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="startFramentButtonClickActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fragmentTabsImageView"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentDetailImageView"
+        app:srcCompat="@drawable/fragment_click" />
+
+
+</android.support.constraint.ConstraintLayout>

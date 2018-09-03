@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">PlayingWithFragments</string>
+    <string name="title_activity_fragment_manager">FragmentManager</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="joyfull_smiley">Joyfull smiley</string>
+    <string name="sadness_smiley">Sadness smiley</string>
+    <string name="add_joy">Add Joy</string>
+    <string name="add_sadness">Add Sadness</string>
+    <string name="remove_joy">Remove Joy</string>
+    <string name="remove_sadness">Remove Sadness</string>
+    <string name="replace_with_joy_fragment">Replace With\nJoy Fragment</string>
+    <string name="replace_with_sadness_fragment">Replace With\nSadness Fragment</string>
+    <string name="fragment_detail_image">Fragment detail image</string>
+    <string name="fragment_manager_image">Fragment manager image</string>
+    <string name="title_movie_list">Movies</string>
+    <string name="title_movie_detail">Movie Detail</string>
+    <string name="movie_poster">Movie poster</string>
+
+
+    <string name="duration_movie_deadpool">1 hr 48 min</string>
+    <string name="time_icon">Time Icon</string>
+    <string name="mark_as_watched_button">Watched Button</string>
+    <string name="add_to_playlist_button">Add To Playlist Button</string>
+    <string name="download_movie_button">Download Movie Button</string>
+    <string name="movie_year_deadpool">2016</string>
+    <string name="movie_title_deadpool">Deadpool</string>
+    <string name="play_button">Play Button</string>
+    <string name="deadpool_summary">Based upon Marvel Comics\\\' most unconventional hero, Deadpool tells the origin story of former Special Forces operative turned mercenary Wade Wilson. Who after being subjected to a rogue experiment leaves him with accelerated healing powers, adopts the alter ego Deadpool.</string>
+    <string name="movie_header">Movie Header</string>
+    <string name="title_activity_tabbed_movie">TabbedMovieActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_tabs_movie">TabsMovieActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="title_activity_tabs">TabsActivity</string>
+    <string name="watchlist">Watchlist</string>
+    <string name="click_me">Click me!</string>
+    <string name="click_count">Click count</string>
+    <string name="zero">0</string>
+</resources>
