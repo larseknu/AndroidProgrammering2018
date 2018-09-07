@@ -1,5 +1,6 @@
 package no.hiof.larseknu.playingwithfragments.fragmentdetailexample;
 
+
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -12,8 +13,8 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import no.hiof.larseknu.playingwithfragments.R;
 import no.hiof.larseknu.playingwithfragments.model.Movie;
-
 
 /**
  * A simple {@link Fragment} subclass.
@@ -21,24 +22,48 @@ import no.hiof.larseknu.playingwithfragments.model.Movie;
 public class MovieDetailFragment extends Fragment {
     private List<Movie> movieList;
 
-    private TextView movieTitleTextView;
+    public final static String MOVIE_INDEX = "movieIndex";
+    private static final int DEFAULT_MOVIE_INDEX = 1;
+
+    private TextView movieTitleView;
     private ImageView moviePosterImageView;
     private int movieIndex;
 
-    // TODO 02.01: Create an corresponding layout fragment_movie_detail.xml
-    // it should at least have a movie title and a movie poster
+    public MovieDetailFragment() {
+        // Required empty public constructor
+    }
 
-    // TODO 02.02: Create a empty constructor
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        movieList = Movie.getData();
 
-    // TODO 02.03: Override onCreateView() fragment lifecycle method
-    // TODO 02.04: In onCreateView: Inflate the layout fragment_movie_detail layout
-    // TODO 02.05: In onCreateView: Get a reference to the views that holds the movie title and movie poster
+        // Inflate the layout for this fragment
+        View fragmentView = inflater.inflate(R.layout.fragment_movie_detail, container, false);
+        movieTitleView = fragmentView.findViewById(R.id.movie_title);
+        moviePosterImageView = fragmentView.findViewById(R.id.movie_poster);
 
+        movieIndex = savedInstanceState == null? DEFAULT_MOVIE_INDEX : savedInstanceState.getInt(MOVIE_INDEX, DEFAULT_MOVIE_INDEX);
+        setDisplayedMovieDetail(movieIndex);
 
-    // TODO 02.02: Create a method that has an int movieIndex as parameter
-    // (this gives the Activity the possibility of sending us that information)
-    // TODO 02.03: Get the selected movie
-    // TODO 02.03: Fill the views with the movie title and movie poster from the selected movie
+        return fragmentView;
+    }
 
-    // TODO 04.01: Add handling for saving the instance (we want to see the same movie if we rotate the screen)
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        outState.putInt(MOVIE_INDEX, movieIndex);
+    }
+
+    public void setDisplayedMovieDetail(int movieIndex) {
+        this.movieIndex = movieIndex;
+        movieList = Movie.getData();
+
+        Movie movie = movieList.get(movieIndex);
+
+        movieTitleView.setText(movie.getTitle());
+
+        Drawable imagePoster = ContextCompat.getDrawable(getActivity(), movie.getImageId());
+        if (imagePoster != null)
+            moviePosterImageView.setImageDrawable(imagePoster);
+    }
 }

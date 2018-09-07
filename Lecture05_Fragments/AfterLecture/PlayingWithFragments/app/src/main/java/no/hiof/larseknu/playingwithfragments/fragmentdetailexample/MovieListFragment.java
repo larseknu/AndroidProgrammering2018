@@ -1,5 +1,6 @@
 package no.hiof.larseknu.playingwithfragments.fragmentdetailexample;
 
+
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
@@ -15,6 +16,9 @@ import no.hiof.larseknu.playingwithfragments.R;
 import no.hiof.larseknu.playingwithfragments.adapter.MovieRecyclerAdapter;
 import no.hiof.larseknu.playingwithfragments.model.Movie;
 
+/**
+ * A simple {@link Fragment} subclass.
+ */
 public class MovieListFragment extends Fragment {
 
     private RecyclerView recyclerView;

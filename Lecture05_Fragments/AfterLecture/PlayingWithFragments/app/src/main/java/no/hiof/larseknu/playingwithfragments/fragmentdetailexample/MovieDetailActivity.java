@@ -7,13 +7,18 @@ import android.os.Bundle;
 import no.hiof.larseknu.playingwithfragments.R;
 
 public class MovieDetailActivity extends AppCompatActivity {
+    public static final String MOVIE_ID_KEY = "movie_id";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movie_detail);
 
-        // TODO 03.01: Get the extra information from the intent
-        // TODO 03.01: Get a reference to the MovieDetailFragment and set the movieId
+        int id = getIntent().getIntExtra(MOVIE_ID_KEY, 1);
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        MovieDetailFragment movieDetailFragment = (MovieDetailFragment) fragmentManager.findFragmentById(R.id.movieDetailFragment);
+
+        movieDetailFragment.setDisplayedMovieDetail(id);
     }
 }
