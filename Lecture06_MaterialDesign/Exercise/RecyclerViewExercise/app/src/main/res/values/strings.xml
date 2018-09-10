@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RecycleViewExercise</string>
+    <string name="animal">Animal</string>
+    <string name="linearviewhorizontal">LinearViewHorizontal</string>
+    <string name="linearviewvertical">LinearViewVertical</string>
+    <string name="gridview">GridView</string>
+    <string name="staggeredviewhorizontal">StaggeredViewHorizontal</string>
+    <string name="staggeredviewvertical">StaggeredViewVertical</string>
+</resources>
