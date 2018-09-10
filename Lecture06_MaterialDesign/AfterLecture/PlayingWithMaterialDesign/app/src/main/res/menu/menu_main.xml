@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/colors"
+        android:icon="@drawable/ic_color_lens"
+        android:title="@string/colors"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/landscape"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:title="@string/landscape"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/animals"
+        android:icon="@drawable/ic_pets"
+        android:title="@string/animals"
+        app:showAsAction="always" />
+
+</menu>
