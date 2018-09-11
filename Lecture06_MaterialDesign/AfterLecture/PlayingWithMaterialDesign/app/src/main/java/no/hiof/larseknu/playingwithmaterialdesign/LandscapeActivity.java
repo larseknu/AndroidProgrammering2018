@@ -16,6 +16,7 @@ public class LandscapeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_landscape);
 
+        // Sets the toolbar
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle(R.string.beautiful_landscapes);
 
@@ -25,8 +26,10 @@ public class LandscapeActivity extends AppCompatActivity {
     private void setUpRecycleView() {
         RecyclerView recyclerView = findViewById(R.id.landscapeRecycleView);
 
+        // Set our own adapter to be used in the RecycleView, and sends it the data
         recyclerView.setAdapter(new LandscapeRecyclerAdapter(this, Landscape.getData()));
 
+        // Sets the layoutmanager we want to use
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 

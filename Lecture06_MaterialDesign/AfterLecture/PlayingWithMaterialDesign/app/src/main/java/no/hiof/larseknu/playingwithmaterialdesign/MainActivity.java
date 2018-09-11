@@ -24,13 +24,15 @@ public class MainActivity extends AppCompatActivity implements Toolbar.OnMenuIte
         //toolbar.setLogo(R.drawable.ic_launcher_foreground);
         //toolbar.setNavigationIcon(R.drawable.ic_launcher_foreground);
 
+        // Sets a menu to the toolbar
         toolbar.inflateMenu(R.menu.menu_main);
+        // Sets the activity to handle the clicks on the menu
         toolbar.setOnMenuItemClickListener(this);
-
     }
 
     @Override
     public boolean onMenuItemClick(MenuItem menuItem) {
+        // Handles which item in the menu that gets clicked
         switch (menuItem.getItemId()) {
             case R.id.landscape:
                 startActivity(new Intent(this, LandscapeActivity.class));
