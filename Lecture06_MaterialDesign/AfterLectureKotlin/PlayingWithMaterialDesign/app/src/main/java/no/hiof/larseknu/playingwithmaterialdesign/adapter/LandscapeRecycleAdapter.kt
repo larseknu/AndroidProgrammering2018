@@ -27,15 +27,19 @@ class LandscapeRecycleAdapter(private val landscapeList : ArrayList<Landscape>, 
     override fun onBindViewHolder(viewHolder: LandscapeViewHolder, position: Int) {
         val landscape: Landscape = landscapeList[position]
 
-        viewHolder.landscapeImageView.setImageResource(landscape.imageID)
-        viewHolder.titleTextView.text = landscape.title
-        viewHolder.descTextView.text = landscape.description
+        viewHolder.setLandscape(landscape)
     }
 
 }
 
 class LandscapeViewHolder (view: View) : RecyclerView.ViewHolder(view) {
-    val landscapeImageView: ImageView = view.thumbnailImageView
-    val titleTextView: TextView = view.titleTextView
-    val descTextView: TextView = view.descriptionTextView
+    private val landscapeImageView: ImageView = view.thumbnailImageView
+    private val titleTextView: TextView = view.titleTextView
+    private val descTextView: TextView = view.descriptionTextView
+
+    fun setLandscape(landscape: Landscape) {
+        landscapeImageView.setImageResource(landscape.imageID)
+        titleTextView.text = landscape.title
+        descTextView.text = landscape.description
+    }
 }

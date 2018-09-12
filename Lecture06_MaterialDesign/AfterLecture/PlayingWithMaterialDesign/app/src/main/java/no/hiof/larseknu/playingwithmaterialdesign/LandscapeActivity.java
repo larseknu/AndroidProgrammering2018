@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 
 import no.hiof.larseknu.playingwithmaterialdesign.adapter.LandscapeRecyclerAdapter;
 import no.hiof.larseknu.playingwithmaterialdesign.model.Landscape;
@@ -18,9 +19,20 @@ public class LandscapeActivity extends AppCompatActivity {
 
         // Sets the toolbar
         Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle(R.string.beautiful_landscapes);
+        toolbar.setTitle(R.string.landscapes);
+        toolbar.inflateMenu(R.menu.menu_main);
+        toolbar.setLogo(R.drawable.logo_24dp);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         setUpRecycleView();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+
+        return true;
     }
 
     private void setUpRecycleView() {

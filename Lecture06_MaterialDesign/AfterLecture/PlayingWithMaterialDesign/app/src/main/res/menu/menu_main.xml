@@ -9,6 +9,13 @@
         app:showAsAction="ifRoom|withText" />
 
     <item
+        android:id="@+id/action_search"
+        android:title="@string/search"
+        android:icon="@drawable/ic_search_black_24dp"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView" />
+
+    <item
         android:id="@+id/landscape"
         android:icon="@android:drawable/ic_menu_preferences"
         android:title="@string/landscape"

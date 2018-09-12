@@ -6,7 +6,23 @@
     android:layout_margin="8dp"
     app:cardCornerRadius="5dp">
 
-    <!-- TODO ALI 1: Create a ImageView for the animal image -->
-    <!-- TODO ALI 2: Create a TextView for the animal image -->
+    <!-- ALI 1: Create a ImageView for the animal image -->
+    <!-- ALI 2: Create a TextView for the animal image -->
+
+    <ImageView
+        android:id="@+id/animalImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ani_badger_one"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_gravity="center|bottom"/>
+
 
 </android.support.v7.widget.CardView>

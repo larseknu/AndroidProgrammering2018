@@ -1,6 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
+    <!--style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar"-->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
@@ -21,7 +22,7 @@
 
     <style name="PopupTheme"  parent="ThemeOverlay.AppCompat.Light">
 
-        <item name="android:textColorPrimary">@android:color/darker_gray</item>  <!-- Text color of Overflow Menu -->
+        <item name="android:textColorPrimary">@android:color/black</item>  <!-- Text color of Overflow Menu -->
         <item name="android:background">@android:color/white</item>        <!-- Background of Overflow Menu -->
 
     </style>

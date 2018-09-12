@@ -4,7 +4,7 @@ import no.hiof.larseknu.playingwithmaterialdesign.R
 import no.hiof.larseknu.playingwithmaterialdesign.model.Landscape.Images.getImages
 
 data class Landscape( val imageID: Int, val title: String, val description: String) {
-    
+
     companion object Data {
         fun getData(): ArrayList<Landscape> {
             val landscapeList: ArrayList<Landscape> = arrayListOf()

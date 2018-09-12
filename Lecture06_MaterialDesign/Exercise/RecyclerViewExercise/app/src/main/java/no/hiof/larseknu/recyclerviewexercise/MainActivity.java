@@ -13,7 +13,6 @@ import no.hiof.larseknu.recyclerviewexercise.adapter.AnimalRecyclerAdapter;
 import no.hiof.larseknu.recyclerviewexercise.model.Animal;
 
 public class MainActivity extends AppCompatActivity {
-
     private RecyclerView recyclerView;
 
     @Override
@@ -26,10 +25,13 @@ public class MainActivity extends AppCompatActivity {
 
     private void setUpRecycleView() {
         // TODO MA 1: Get reference to the RecyclerView
+        recyclerView = findViewById(R.id.animalRecycleView);
 
         // TODO MA 2: Set up an AnimalRecyclerAdapter and set it to the RecycleView
+        recyclerView.setAdapter(new AnimalRecyclerAdapter(this, Animal.getData()));
 
         // TODO MA 3: Set a LinearLayoutManager for the RecycleView
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
     }
 
     @Override
@@ -42,12 +44,25 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.linearViewHorizontal:
-                // TODO MA 4: Change to a horizontal LinearLayout manager
+                // MA 4: Change to a horizontal LinearLayout manager
+                LinearLayoutManager linearLayoutManagerHorizontal = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+                recyclerView.setLayoutManager(linearLayoutManagerHorizontal);
                 return true;
             case R.id.linearViewVertical:
                 // TODO MA 5: Change to a vertical LinearLayout manager
+                LinearLayoutManager linearLayoutManagerVertical = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+                recyclerView.setLayoutManager(linearLayoutManagerVertical);
                 return true;
                 // TODO MA 6: Add handling for the other items in the menu and change to the corresponding layout
+            case R.id.gridView:
+                GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 3);
+                recyclerView.setLayoutManager(gridLayoutManager);
+                return true;
+
+            case R.id.staggeredViewVertical:
+                StaggeredGridLayoutManager staggeredGridLayoutManager = new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL);
+                recyclerView.setLayoutManager(staggeredGridLayoutManager);
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
