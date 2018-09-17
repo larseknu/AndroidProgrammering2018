@@ -21,7 +21,6 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.storage.FirebaseStorage;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -57,8 +56,6 @@ public class MainActivity extends AppCompatActivity {
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
         moviedataReference = firebaseDatabase.getReference("movies");
-
-        FirebaseStorage firebaseStorage = FirebaseStorage.getInstance();
 
         // Run this _once_ to set up some testdata in your firebase database
         // generateTestData();
