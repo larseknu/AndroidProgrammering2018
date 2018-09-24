@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_header_container"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@drawable/navigation_drawer_header">
+
+
+    <TextView
+        android:id="@+id/nameHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="bottom"
+        android:text="Lars Emil Knudsen"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/emailHeader"
+        app:layout_constraintStart_toStartOf="@+id/emailHeader" />
+
+    <TextView
+        android:id="@+id/emailHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:fontFamily="sans-serif"
+        android:gravity="bottom"
+        android:text="larseknu@hiof.no"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
