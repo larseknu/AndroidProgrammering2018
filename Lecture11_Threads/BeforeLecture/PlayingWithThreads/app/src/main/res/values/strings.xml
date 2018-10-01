@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PlayingWithThreads</string>
+    <string name="hello_threads">Hello Threads!</string>
+    <string name="doworkthreadless">DoWorkThreadless</string>
+    <string name="doworkinthread">DoWorkInThread</string>
+    <string name="easypermissions">EasyPermissions</string>
+    <string name="doasyncwork">DoAsyncWork</string>
+    <string name="doworkinasynctask">DoWorkInAsyncTask</string>
+</resources>
