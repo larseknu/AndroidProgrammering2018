@@ -5,4 +5,5 @@
     <string name="doworkinthread">DoWorkInThread</string>
     <string name="easypermissions">EasyPermissions</string>
     <string name="doasyncwork">DoAsyncWork</string>
+    <string name="doworkinasynctask">DoWorkInAsyncTask</string>
 </resources>

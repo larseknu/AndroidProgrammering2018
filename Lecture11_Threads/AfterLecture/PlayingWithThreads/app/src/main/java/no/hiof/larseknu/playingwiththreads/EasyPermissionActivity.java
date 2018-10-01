@@ -29,6 +29,7 @@ public class EasyPermissionActivity extends AppCompatActivity implements EasyPer
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_easy_permission);
+        getSupportActionBar().setTitle("EasyPermissions");
 
         statusText = findViewById(R.id.statusText);
     }
