@@ -5,8 +5,8 @@ android {
     defaultConfig {
         applicationId "no.hiof.larseknu.playingwiththreads"
         minSdkVersion 21
-        // Set the target to 23 so we don't have to handle runtime permissions
-        targetSdkVersion 23
+        // Set the target to 22 so we don't have to handle runtime permissions
+        targetSdkVersion 22
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
