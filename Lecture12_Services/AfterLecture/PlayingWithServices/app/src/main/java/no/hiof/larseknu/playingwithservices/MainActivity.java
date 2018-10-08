@@ -1,6 +1,10 @@
 package no.hiof.larseknu.playingwithservices;
 
 import android.app.IntentService;
+import android.app.job.JobInfo;
+import android.app.job.JobScheduler;
+import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.ResultReceiver;
@@ -16,6 +20,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 
 import no.hiof.larseknu.playingwithservices.service.MyIntentService;
+import no.hiof.larseknu.playingwithservices.service.MyScheduledService;
 import no.hiof.larseknu.playingwithservices.service.MyStartedService;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,6 +32,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         resultTextView = findViewById(R.id.resultTextView);
+    }
+
+    public void scheduleJob(View view) {
+        JobScheduler jobScheduler = (JobScheduler) getSystemService(Context.JOB_SCHEDULER_SERVICE);
+
+        JobInfo.Builder jobInfo = new JobInfo.Builder(1,
+                new ComponentName(this, MyScheduledService.class))
+                .setRequiresCharging(true);
+
+        jobScheduler.schedule(jobInfo.build());
     }
 
     public void startStartedService(View view) {

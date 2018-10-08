@@ -36,6 +36,12 @@
             android:name=".service.MyBoundService"
             android:enabled="true"
             android:exported="false" />
+
+        <service
+            android:name=".service.MyScheduledService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false">
+        </service>
     </application>
 
 </manifest>
