@@ -50,6 +50,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     private int kittenCounter = 0;
     private ArrayList<Marker> kittenMarkers;
+
+    private static final String KITTEN_LOST_ID = "lost_kitten";
+    private KittenLocation lostKitten;
     //endregion
 
     @Override
@@ -70,6 +73,10 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
 
         new DrawRoute().execute(HIOF);
+
+        if (savedInstanceState != null) {
+            lostKitten = savedInstanceState.getParcelable(KITTEN_LOST_ID);
+        }
     }
 
     @Override
@@ -85,6 +92,20 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         gMap.addMarker(new MarkerOptions().position(FREDRIKSTAD).title("Fredrikstad Kino"));
         gMap.animateCamera(CameraUpdateFactory.newLatLng(FREDRIKSTAD), 2000, null);
+
+        if (lostKitten != null)
+            addKittenMarker(lostKitten.getLatLng(), lostKitten.getName());
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        if (!kittenMarkers.isEmpty()) {
+            Marker kittenMarker = kittenMarkers.get(0);
+
+            KittenLocation kittenLocation = new KittenLocation(kittenMarker.getTitle(), new LatLng(kittenMarker.getPosition().latitude, kittenMarker.getPosition().longitude));
+
+            outState.putParcelable(KITTEN_LOST_ID, kittenLocation);
+        }
     }
 
     // region UI handling
@@ -115,8 +136,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         uiSettings.setTiltGesturesEnabled(true);
         uiSettings.setZoomControlsEnabled(true);
         uiSettings.setMapToolbarEnabled(false);
+        gMap.setMyLocationEnabled(true);
         uiSettings.setMyLocationButtonEnabled(true);
-
     }
     // endregion
 
