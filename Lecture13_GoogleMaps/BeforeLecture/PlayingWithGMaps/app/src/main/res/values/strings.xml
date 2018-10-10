@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">PlayingWithGMaps</string>
+    <string name="title_activity_main">Map</string>
+    <string name="draw_route">Draw Route</string>
+    <string name="animate_kittens">Animate kittens</string>
+    <string name="remove_kittens">Remove Kittens</string>
+
+    <string name="no_location_permission">We need permission to access your location</string>
+
+    <string name="directions_api">AIzaSyBCy6clF7KpzmcUT5VIg9AutciJGcWwesg</string>
+
+    <string name="normal">Normal</string>
+    <string name="hybrid">Hybrid</string>
+    <string name="satellite">Satellite</string>
+    <string name="terrain">Terrain</string>
+    <string name="none">None</string>
+</resources>
