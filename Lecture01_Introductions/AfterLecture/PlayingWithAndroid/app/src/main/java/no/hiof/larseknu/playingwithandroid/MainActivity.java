@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // Specifies the layout we want to use in our activity
         setContentView(R.layout.activity_main);
 
         Log.d(LOG_TAG, "onCreate() ran");
@@ -60,8 +61,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void navigateToOtherActivity(View view) {
+        // Creates an explicit intent to start "OtherActivity"
         Intent startOtherActivityIntent = new Intent(this, OtherActivity.class);
 
+        // Start the OtherActivity in our application
         startActivity(startOtherActivityIntent);
     }
 }
